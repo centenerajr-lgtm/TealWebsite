@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Officers</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: #1e3a8a;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #374151;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1e3a8a;
+}
+
+/* HERO */
+.hero {
+  margin-top: 80px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background:
+    linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)),
+    url("https://raw.githubusercontent.com/centenerajr-lgtm/12-teal-photos/0cbcbf51d8d769315db5d928921ea4fe11878738/481714088_626366150194488_5962722867243626304_n.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+
+.officers-container {
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.officer-card {
+  background: transparent; 
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  width: 220px;
+}
+
+.officer-card:hover {
+  transform: translateY(-6px);
+}
+
+.officer-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.officer-name {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+.officer-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid #1e3a8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.officer-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+footer {
+  margin-top: 50px;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/centenerajr-lgtm/website-png/ac39fe85bbe6acfef44f3e6ab40ad320e70b5441/download.png">
+    <h1>DEE HWA LIONG ACADEMY</h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="students.html">About</a>
+    <a href="officer darkmode.html">Darkmode</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Class Officers</h2>
+</section>
+
+<section class="officers-container">
+
+ 
+  <div class="row">
+    <div class="officer-card">
+      <div class="officer-title">President</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/2e07b1e93e8e9dcd6f5ac2e83794aa5dd755ad7f/Lucero.jpeg">
+      </div>
+      <div class="officer-name">Cyrus Lucero</div>
+    </div>
+  </div>
+
+ 
+  <div class="row">
+    <div class="officer-card">
+      <div class="officer-title">Vice President</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/2e07b1e93e8e9dcd6f5ac2e83794aa5dd755ad7f/Miranda.jpeg">
+      </div>
+      <div class="officer-name">Angel Miranda</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="officer-card">
+      <div class="officer-title">Secretary</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/2e07b1e93e8e9dcd6f5ac2e83794aa5dd755ad7f/Constantino.jpeg">
+      </div>
+      <div class="officer-name">Angel Constantino</div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-title">Treasurer</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/2e07b1e93e8e9dcd6f5ac2e83794aa5dd755ad7f/Gaylican.jpeg">
+      </div>
+      <div class="officer-name">Maria Vhanessa Gaylican</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="officer-card">
+      <div class="officer-title">Peace Officer</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/2e07b1e93e8e9dcd6f5ac2e83794aa5dd755ad7f/Segovia.jpeg">
+      </div>
+      <div class="officer-name">Jhay Segovia</div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-title">Muse</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/a801931c42c4f061b8246b2831aec1b63b692f0c/Jonamuse.jpg">
+      </div>
+      <div class="officer-name">Jonalyn Joyce Bayagusa</div>
+    </div>
+
+    <div class="officer-card">
+      <div class="officer-title">Escort</div>
+      <div class="officer-frame">
+        <img src="https://raw.githubusercontent.com/centenerajr-lgtm/12-STEM-Teal-website/a801931c42c4f061b8246b2831aec1b63b692f0c/Johnrickesckort.jpg">
+      </div>
+      <div class="officer-name">Johnrick Legaspino
+
+        
+</div>
+</div>
+</div>
+
+</section>
+
+<footer>
+  STEM TEAL • Class Officers
+</footer>
+
+</body>
+</html>
